@@ -5,7 +5,17 @@ import './App.css';
 
 
 class App extends Component {
-  render() {
+  state = {
+    thingy: true,
+
+  }
+
+  toggle= ()=>{
+    this.setState({
+      thingy: !this.state.thingy
+    })
+  } 
+   render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -15,6 +25,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        {this.state.thingy &&
+          <p>This should show and hide</p>
+        }
+        
+        <button onClick ={this.toggle} >Show /Hide</button>
       </div>
     );
   }
