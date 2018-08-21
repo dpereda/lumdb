@@ -1,4 +1,5 @@
-This is my learning of react , https://www.leveluptutorials.com/tutorials/react-16-for-everyone/state-inline-conditionals-and-basic-events
+This is my learning of react 
+Episode 6 done
 
 
 
