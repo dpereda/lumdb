@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-
+import Movie from './Movie'
+ 
+const movies = [
+   {id: 1,
+   title: 'Star Wars',
+   },
+   {id: 2,
+   title: 'Deadpool',
+   },
+   {id: 3,
+   title: 'Avengers',
+   },
+   {id: 4,
+   title: 'Top Gun',
+   },
+  ];
 
 class App extends Component {
   state ={
@@ -24,26 +38,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Welcome text ="Welcome to React by Dan"/>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-       <input type="text" onChange={this.updateInput} value={this.state.input} />
-       <input type="text" ref={(input) => this.text = input}/>
-       
-        <button onClick ={this.submit} >Show Value</button>
+       {movies.map(movie => <Movie key={movie.id} movie ={movie}/>)}
       </div>
     );
   }
 }
 
-class Welcome extends Component{
-    render(){
-      const { text} = this.props;
-      return(
-        <h1 className="App-title">{text}</h1> 
-      )
-    }
-}
 export default App;
