@@ -1,5 +1,9 @@
 This is my learning of react
 
+Episode 11 Done
+
+Episode 10 Done
+
 Episode 9 Done
 
 Episode 8 Done 
