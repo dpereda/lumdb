@@ -1,6 +1,10 @@
 This is my learning of react
 
-Episode 19 doen  added react overdrive
+Episode 21 done
+
+Episode 20 done info on pure components
+
+Episode 19 done added react overdrive
 
 Episode 18 is done.
 
