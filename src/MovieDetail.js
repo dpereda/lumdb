@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Poster } from './Movie';
 
 const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
 const BACKDROP_PATH = 'http://image.tmdb.org/t/p/w1280';
@@ -23,15 +25,40 @@ class MovieDetail extends Component {
    render() {
      // const { movie } = this.state;
      return (
-       <div>
-         <img src={`${BACKDROP_PATH}${this.state.movie.backdrop_path}`} alt={this.state.movie.title} />
-         <img src={`${POSTER_PATH}${this.state.movie.poster_path}`} alt={this.state.movie.title} />
-         <h1>{this.state.movie.title}</h1>
-         <h3>{this.state.movie.release_date}</h3>
-         <p>{this.state.movie.overview}</p>
-       </div>
+       <MovieWrapper backdrop={`${BACKDROP_PATH}${this.state.movie.backdrop_path}`} alt={this.state.movie.title}>
+         <MovieInfo>
+           <Poster src={`${POSTER_PATH}${this.state.movie.poster_path}`} alt={this.state.movie.title} />
+           <div>
+             <h1>{this.state.movie.title}</h1>
+             <h3>{this.state.movie.release_date}</h3>
+             <p>{this.state.movie.overview}</p>
+           </div>
+         </MovieInfo>
+       </MovieWrapper>
      );
    }
 }
 
 export default MovieDetail;
+
+const MovieWrapper = styled.div`
+    position: relative;
+    padding-top: 50vh;
+    background: url(${props => props.backdrop}) no-repeat;
+    background-size: cover;
+
+`;
+
+const MovieInfo = styled.div`
+    background: white;
+    text-align: left;
+    padding: 2rem 10%;
+    display: flex;
+    > div{
+        margin-left: 20px;
+    }
+    img {
+        position: relative;
+        top: -5rem;
+    }
+`;
