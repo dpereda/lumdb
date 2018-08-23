@@ -1,5 +1,9 @@
 This is my learning of react
 
+Episode 14 is done,  but not sure I fully understand it.
+
+Episode 12 and 13 Done
+
 Episode 11 Done
 
 Episode 10 Done
