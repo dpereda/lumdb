@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Movie from './Movie';
 
-class MovieList extends Component {
+class MoviesList extends Component {
    state={
      movies: [],
    }
@@ -28,4 +28,4 @@ class MovieList extends Component {
    }
 }
 
-export default MovieList;
+export default MoviesList;

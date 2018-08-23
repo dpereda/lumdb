@@ -1,5 +1,7 @@
 This is my learning of react
 
+Episode 17 is done.
+
 Episode 15 and 16 are done.
 
 Episode 14 is done,  but not sure I fully understand it.
