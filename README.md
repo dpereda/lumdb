@@ -1,5 +1,7 @@
 This is my learning of react
 
+Episode 22 done I created a copy of the project and tested the Eject
+
 Episode 21 done
 
 Episode 20 done info on pure components
